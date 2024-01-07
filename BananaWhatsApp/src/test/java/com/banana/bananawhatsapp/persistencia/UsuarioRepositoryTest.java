@@ -27,6 +27,8 @@ class UsuarioRepositoryTest {
     @Autowired
     IUsuarioRepository repo;
 
+
+
     @Test
     void dadoUnUsuarioValido_cuandoCrear_entoncesUsuarioValido() throws Exception {
         Usuario usgen = new Usuario(null, "Pepe", "pepe@mail.com", LocalDate.now(), true);

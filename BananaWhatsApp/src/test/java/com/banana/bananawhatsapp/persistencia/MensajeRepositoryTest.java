@@ -29,8 +29,8 @@ class MensajeRepositoryTest {
     @Test
     void dadoUnMensajeValido_cuandoCrear_entoncesMensajeValido() throws Exception {
 
-        Usuario remi = repous.getById(3);
-        Usuario dest = repous.getById(4);
+        Usuario remi = repous.getById(5);
+        Usuario dest = repous.getById(6);
 
         Mensaje mens = new Mensaje(null, remi, dest, "Hola qué tal", LocalDate.now());
         repo.crear(mens);
