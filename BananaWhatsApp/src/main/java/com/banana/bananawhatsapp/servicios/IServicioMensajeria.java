@@ -8,7 +8,7 @@ import com.banana.bananawhatsapp.modelos.Usuario;
 import java.util.List;
 
 public interface IServicioMensajeria {
-    public Mensaje crearMensaje(Mensaje mensaje) throws UsuarioException, MensajeException;
+    public Mensaje crearMensaje(Mensaje mensaje) throws MensajeException;
 
     public Mensaje enviarMensaje(Usuario remitente, Usuario destinatario, String texto) throws UsuarioException, MensajeException;
 
@@ -18,5 +18,5 @@ public interface IServicioMensajeria {
 
     public Usuario getById(int id) throws UsuarioException;
 
-    //public Usuario getById(Usuario usuario) throws UsuarioException;
+
 }

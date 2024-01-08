@@ -14,5 +14,4 @@ public interface IMensajeRepository {
     public boolean borrarTodos(Usuario usuario) throws SQLException;
 
 
-    //public Usuario getById();
 }

@@ -47,8 +47,5 @@ public class MensajeServicioImpl implements IServicioMensajeria {
         return null;
     }
 
-    //@Override
-    //public Usuario getById(Usuario usuario) throws UsuarioException {
-    //    return null;
-    //}
+
 }

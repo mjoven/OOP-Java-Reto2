@@ -28,10 +28,9 @@ class ServicioUsuariosTest {
         Usuario usgen = new Usuario(null, "Pepe", "pepe@mail.com", LocalDate.now(), true);
         servicio.crearUsuario(usgen);
         assertThat(usgen, notNullValue());
-        //assertThat(usgen.getId(), greaterThan(0));
+        assertThat(usgen.getId(), greaterThan(0));
 
-        //Usuario verUsuario = usuarioRepo.getById(usgen.getId());
-        //assertThat(verUsuario, equalTo(usgen));
+
     }
 
     @Test

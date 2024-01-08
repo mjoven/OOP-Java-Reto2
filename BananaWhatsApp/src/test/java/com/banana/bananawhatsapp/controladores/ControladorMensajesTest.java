@@ -3,7 +3,7 @@ package com.banana.bananawhatsapp.controladores;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.banana.bananawhatsapp.config.SpringConfig;
-import com.banana.bananawhatsapp.exceptions.UsuarioException;
+import com.banana.bananawhatsapp.exceptions.MensajeException;
 import com.banana.bananawhatsapp.modelos.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -45,9 +45,10 @@ class ControladorMensajesTest {
         Usuario uDestinatario = new Usuario();
         uDestinatario.setId(2);
         Mensaje mens = new Mensaje(null, uRemitente, uDestinatario, "", LocalDate.now());
-        controladorMensajes.crear(mens);
-        assertThat(mens, notNullValue());
-        assertThat(mens.getId(), greaterThan(0));
+         assertThrows(MensajeException.class, () -> {
+            controladorMensajes.crear(mens);
+        });
+
     }
 
     @Test

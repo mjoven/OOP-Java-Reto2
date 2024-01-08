@@ -50,10 +50,7 @@ public class UsuarioServicioImpl implements IServicioUsuarios {
         return null;
     }
 
-    //@Override
-    //public Usuario getById(int id) throws UsuarioException {
-    //    return null;
-    // }
+
 
     @Override
     public Usuario getUsuario(Usuario usuario) throws UsuarioException {
@@ -67,21 +64,7 @@ public class UsuarioServicioImpl implements IServicioUsuarios {
         return usuario;
     }
 
-    //@Override
-    //public Usuario getById(Usuario usuario) throws UsuarioException {
-    //    return null;
-    //}
-    /*@Override
-    public Usuario getById(Usuario usuario) throws UsuarioException {
-        try {
-            usuarioRepo.getById(usuario.getId());
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new UsuarioException("Error recuperar usuario (servicio): " + e.getMessage());
-        }
-        return usuario;
-    }*/
 
 
 }

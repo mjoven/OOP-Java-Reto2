@@ -63,10 +63,5 @@ public class MensajeJDBCRepo implements IMensajeRepository {
         return false;
     }
 
-    //@Override
-    //public Usuario getById() {
-    //    return null;
-    //}
-
 
 }
